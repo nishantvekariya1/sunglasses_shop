@@ -1,0 +1,12 @@
+li {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    /* Ensure that the absolute positioned underline is relative to the list item */
+    text-decoration: none;
+    /* Remove default underline */
+    color: #000;
+    /* Set default text color */
+}

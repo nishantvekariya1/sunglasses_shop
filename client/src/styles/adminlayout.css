@@ -1,0 +1,61 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    /* Ensure full vertical height */
+}
+
+.admin-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.active-link {
+    color: white;
+    background-color: #007bff;
+}
+
+.content {
+    flex: 1;
+    /* Takes remaining space */
+    margin-left: 200px;
+    /* Equal to the width of the navbar */
+    padding: 20px;
+    /* Space inside the content area */
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+}
+
+/* Responsive adjustments if necessary */
+@media (max-width: 768px) {
+    .admin-navbar {
+        width: 100px;
+        /* Smaller navbar on smaller screens */
+    }
+
+    .content {
+        margin-left: 100px;
+    }
+}
