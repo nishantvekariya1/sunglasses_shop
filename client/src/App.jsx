@@ -20,7 +20,6 @@ import AdminProductUpdate from "./pages/Admin-Products-Update";
 import AdminProductsAdd from "./pages/Admin-Products-Add";
 import Detailviewproduct from "./pages/Detailviewproduct";
 import { CartProvider } from "./components/cart/contextReducer";
-import Cart from "./components/cart/Cart";
 import AdminOrders from "./pages/Admin-Orders";
 import Footer from "./components/Footer";
 
@@ -39,7 +38,6 @@ function App() {
             <Route path="/menproduct" element={<MenProduct />} />
             <Route path="/womenproduct" element={<WomenProduct />} />
             <Route path="/register" element={<Register />} />
-            {/* <Route path="/cart" element={<Cart />} /> */}
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/admin" element={<AdminLayout />}>
