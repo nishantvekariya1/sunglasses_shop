@@ -12,7 +12,7 @@ const errorMiddleware = require("./middleware/error-middleware");
 const app = express();
 
 const corsOpetions = {
-  origin: import.meta.env.ORIGIN,
+  origin: process.env.ORIGIN,
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
